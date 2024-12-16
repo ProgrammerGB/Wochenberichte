@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wochenbericht KW48 2024, Giacomo Betsch, Informatiker Plattformentwicklung EFZ</title>
+  <title>Wochenbericht KW49 2024, Giacomo Betsch, Informatiker Plattformentwicklung EFZ</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/prism.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -30,7 +30,7 @@
 
     <!-- Text Start -->
     <div class="titel">
-      <h1>Wochenbericht KW48 2024</h1>
+      <h1>Wochenbericht KW49 2024</h1>
       Giacomo Betsch<br>
      Informatiker EFZ Plattformentwicklung
     </div>
@@ -38,7 +38,7 @@
 
     <!-- Navigation Start -->
     <nav>
-      <div class="arrow"><a href="kw_47_2024.html" title="Back"><img src="images/arrow_back.png"></a></div>
+      <div class="arrow"><a href="kw_48_2024.html" title="Back"><img src="images/arrow_back.png"></a></div>
       <div class="overview"><a href="index.html" title="Overview"><img src="images/hamburger.png"></a></div>
       <div class="arrow"><a href="kw_49_2024.html" title="Next"><img src="images/arrow_next.png"></a></div>
     </nav>
@@ -54,33 +54,32 @@
 
       <!-- Beitrag Wochenbericht Start -->
       <article class="fade-in-up">
-        <h2>Linux</h2>
-        <img src="images/linux.png">
+        <h2>Ük188</h2>
+        <img src="images/dhcp.png">
 
         <legend>
         </legend>
-        <h4></h4>
-        <h3>Linux</h3>
+        <h4>DHCP</h4>
+        <h3></h3>
         <p><p>
-            
-          
-          <p>Linux ist ein vielseitiges und quelloffenes Betriebssystem, das oft benutzt wird von Servern und Supercomputern bis hin zu Smartphones. Es basiert auf einem monolithischen Kernel, der für Stabilität und Flexibilität sorgt. Seine Anpassungsfähigkeit macht es besonders beliebt bei Entwicklern, IT-Experten und Unternehmen. Linux eingaben werden meist auch ohne nachfrage ausgeführt weswegen man Vorsichtig sein muss. (Windows wir oft auch als Klickibunti bezeichnet weil man viele Eingaben bestätigen muss.)</p>
+Das Dynamic Host Configuration Protocol (DHCP) ist wichtig für moderner Netzwerke. Es sorgt dafür, dass Geräte wie Computer, Smartphones oder Drucker (Client) automatisch eine IP-Adresse und andere Netzwerkinformationen bekommen, ohne das diese manuell zugewiesen werden müssen. Diese Automatisierung spart Zeit und reduziert Konfigurationsfehler.
 
-            <h3>Open Source und Anpassbarkeit</h3>
-          <p>Einer der grössten Vorteile von Linux ist die Open-Source-Lizenz. Dadurch können Nutzer den Quellcode einsehen, anpassen und weitergeben. Das führt zu einer riesigen Community, die kontinuierlich neue Features und Sicherheitsupdates bereitstellt. Nutzer haben die Möglichkeit, aus einer Vielzahl an Distributionen wie Ubuntu (benutzen wir), Debian oder Fedora die für sie passende auszuwählen.</p>
-            
-            <h3>Kommandos und Werkzeuge</h3>
-            <p>Die Kommandozeile ist wichtig bei der Arbeit mit Linux. Befehle wie ls, cd, mkdir und rm ermöglichen eine effiziente Navigation und Verwaltung von Dateien und Verzeichnissen. Spezialisierte Tools wie grep (für Textsuche), top (für Prozessmanagement) und netstat (für Netzwerküberwachung) erweitern die Funktionalität.</p>
-            
-            <h3>Sicherheit und Stabilität</h3>
-            <p>Linux gilt als eines der sichersten Betriebssysteme, da es Benutzerrechte strikt trennt und nur gezielte Programme mit Root-Rechten arbeiten können. Regelmässige Updates und die robuste Architektur machen es zu einer bevorzugten Wahl für Serveranwendungen.</p>
-            
-            <h3>Einsatzmöglichkeiten</h3>
-            <p>Von Webservern (Apache, Nginx) über Containerisierung (Docker) bis hin zu Cloud-Computing-Plattformen (AWS, Azure) ist Linux das Betriebssystem der Wahl. Auch in der Softwareentwicklung ist es durch Werkzeuge wie Git und integrierte Entwicklungsumgebungen wie Visual Studio Code weit verbreitet.</p>
-            
-            <h3>Fazit</h3>
-            <p>Linux kombiniert Sicherheit, Stabilität und Anpassbarkeit und ist daher in vielen IT-Bereichen unverzichtbar. Besonders die Open-Source-Community treibt Innovationen voran, was es zur idealen Wahl für Entwickler und Unternehmen macht.</p>
-            
+<h3>Funktionsweise </h3>
+Ein DHCP-Server ist das zentrale Element in diesem Prozess. Sobald ein Gerät mit dem Netzwerk verbunden wird, sendet es eine Anfrage (DHCP Discover) aus. Der Server antwortet mit einem Angebot (DHCP Offer), das eine freie IP-Adresse und weitere Parameter wie Subnetzmaske, Standard-Gateway und DNS-Server enthält. Der Client akzeptiert das Angebot mit einer Bestätigung (DHCP Request), und der Server bestätigt die Zuweisung (DHCP Acknowledge).
+
+<h3>Vorteile und Einsatzgebiete</h3>
+<p>DHCP wird in den meisten Netzwerken eingesetzt von kleinen Heimnetzwerken bis hin zu grossen Unternehmensumgebungen. Es veringert den Verwaltungsaufwand sehr, da die IP-Adressen automatisch vergeben und verwaltet werden. Zudem hilft DHCP, Konflikte zu vermeiden, da der Server sicherstellt, dass keine doppelten IP-Adressen existieren.
+
+DHCP ist auch flexibel. Wenn sich Netzwerkparameter ändern, können diese zentral auf dem Server aktualisiert werden, ohne dass an jedem einzelnen Gerät Anpassungen notwendig sind. Das ist besonders in grossen Netzwerken mit vielen Endgeräten hilfreich.
+</p>
+<h3>Sicherheitsaspekte</h3>
+<p>DHCP hat normalerweise keine Authentifizierung vorgesehen, dadurch kann es zu Sicherheitsrisiken kommen (z.b durch Rogue-DHCP-Server), die falsche IP-Adressen oder Konfigurationsdaten bereitstellen. Um dies zu verhindern, setzen viele Unternehmen auf zusätzliche Sicherheitsmassnahmen wie DHCP-Snooping oder Filterregeln.
+  </p>
+<h3>Fazit</h3>
+<p>DHCP ist ein unverzichtbares Protokoll, das die Verwaltung von Netzwerken deutlich erleichtert. Es sorgt für eine effiziente, fehlerfreie und flexible Zuweisung von Netzwerkressourcen und bildet die Grundlage für moderne, dynamische IT-Umgebungen.
+  </p>       
+          
+
       </article>
       <!-- Beitrag Wochenbericht Ende -->
 
@@ -100,21 +99,21 @@
       <i>Was ist mir gut gelungen? Wo hatte ich Probleme? Was habe ich heute gelernt? Was würde ich anders machen? Was
         würde ich wieder so machen? Wie habe ich mich gefühlt? Wie haben andere mich erlebt?</i><br><br>
       <hr>
-      <strong>ZLI, Montag, 25. November 2024</strong><br>
-      Wir habe mit der erstellung eines VMware Ubuntu Servers begonnen. Wir haben installationen auf der VMware gemacht und haben sie konfiguriert. Beim Installieren haben wir noch sudo befehle kennengelernt und benutzt.
+      <strong>ZLI, Montag, 02. Dezember 2024</strong><br>
+      Am Morgen hatten wir den Start unseres Üks 188 im Zimmer Pink. Wir haben IPERKA herangehensweise gelernt die wir uns merken sollten. Ich habe eine neue Tabelle in meinem Word erstellt in die ich meine Schritte aufgeschrieben habe. Am Abend habe ich noch einige VMwares und Server installiert und hab diese konfiguriert.
+      
        <hr>
-      <strong>ZLI, Dienstag, 26.November 2024</strong><br>
-     Wir haben ein yaml File in der VMware erstellt womit wir die IP Adresse verändert haben. Es ist wichtig dasnim yaml File die Zeilen richtig Untergeordnet sind. Das haben wir mithilfe netplan gemacht. Ausserdem hab ich mir noch Vi und Vim angeschaut und dessen Befehle gelernt.
+      <strong>ZLI, Dienstag, 03.Dezember 2024</strong><br>
+      Wir haben gelernt wie man eine Verbindung zwischen dem Server und dem Windows Client erstellt. Ich bin relativ gut voran gekommen nachdem ich Anfangs etwas Probleme hatte. Wir haben als nächstes den Windows Server zum DHCP umkonfiguriert. Danach haben wir die IP vom Windows Client auf den DHCP geändert.     
            <hr>
-      <strong>ZLI, Mittwoch, 27.November 2024</strong><br>
-      Wir haben als erstes eine neue VMware erstellt. Danach haben wir auf dieser erstellten VMware einen Linux Desctop heruntergeladen. Ich haben mich für GNOME entschieden. Dafür musste ich eine Anleitung auf der Vorgegebenen Website folgen. Am Nachmittag sind wir in Gruppen gegangen in der wir dann eine Verknüpfung zwischen der VMware und dem Laptop herstellen sollten.
-
+      <strong>ZLI, Mittwoch, 04.Dezember 2024</strong><br>
+     Wir waren nicht im Ük sondern hatten einen spezial Tag. Wir haben als erstes einen Tagesplaan erstellt und dann an unseren Aufgaben gearbeitet. Um 10 Uhr hatten wir noch ein tastaturschreiben Test. Den habe ich leider knapp nicht bestanden. Den restlichen Tag habe ich am Wochenbericht, Ük Betriebsdokumentation und an der Vorbereitung für meinen BMS Test gearbeitet.
       <hr>
-      <strong>ZLI, Donnerstag, 28.November 2024</strong><br>
-      Ich bin im ZLI gewesen da die TBZ aussgefallen ist. Ich habe mir am morgen einen Tagesplan erstellt und bin danach in einen Workschop von den EDBs gegangen. Dort haben Sie mir und anderen Lernenden ihr Projekt vorgestellt. Den restlichen Tag habe ich an meinen Schulaufgaben und Modulen gearbeitet.
+      <strong>TBZ, Donnerstag, 05.Dezember 2024</strong><br>
+      Ich habe am Morgen an meinen Aufträgen im Modul 231 weitergearbeitet. Ich habe mir Viedeos zu Datenschutz und Datensicherheit angeschaut unnd habe einen Text zu Fragen geschrieben. Am Nachmittag habe ich nochmals den Stoff für den Test repitiert und danach haben wir den Test auf ecolm geschrieben. Nach dem Test haben wir mit der Praktischen Arbeit angefangen.
        <hr>
-      <strong>BMZ, Freitag, 29.November 2024</strong><br>
-      Am Freitag habe ich in Französisch am Morgen einige Aufgaben im Buch gelöst und habe einen als Hausaufgabe gegebenen Text gesagt. In Chemie haben wir einen Postenlauf zu den 3D Modellen einiger Atome gemacht. In Wirtschaft habe wir ein neues Thema Marketing angefangen. Am Nachmittag in Politik habe wir ein Neues Thema Geschichte angefangen. In Mathematik haben wir an unseren Aufgaben weitergearbeitet.
+      <strong>BMZ, Freitag, 06.Dezember 2024</strong><br>
+      Am Morgen haben wir in Französisch Aufträge im Buch weitergearbeitet. In Chemie haben wir uns auf die Prüfung vorberreitet und haben uns ins Thema Atome weiter vertieft. In Wirtschaft haben wir im Dossier weitergearbeitet. Am Nachmittag haben wir in Politik an unserem Geschichtsthema weitergearbeitet und in Mathe haben wir zuerst einen Test geschrieben und haben dann ein neues Geometriethema angefan
        <hr>
       <!-- Tagesreflexionen Ende -->
 
