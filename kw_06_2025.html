@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wochenbericht KW05 2025, Giacomo Betsch, Informatiker Plattformentwicklung EFZ</title>
+  <title>Wochenbericht KW06 2025, Giacomo Betsch, Informatiker Plattformentwicklung EFZ</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/prism.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -30,7 +30,7 @@
 
     <!-- Text Start -->
     <div class="titel">
-      <h1>Wochenbericht KW05 2025</h1>
+      <h1>Wochenbericht KW06 2025</h1>
       Giacomo Betsch<br>
      Informatiker EFZ Plattformentwicklung
     </div>
@@ -78,24 +78,27 @@
 
         <legend>
         </legend>
-        <h3>Man in the Middle Angriffe (MITM)</h3>
-<br>
-        <p>Man in the Middle (oder MITM) ist ein Angriff, bei dem ein Angreifer heimlich in die Kommunikation zwischen zwei Parteien (zb. Rechner) eingreift. Das Ziel eines MITM-Angriffs ist es, die Daten die gesendet werden zu überwachen, zu verändern oder sogar zu stehlen, ohne dass die beiden beteiligten Parteien davon wissen.</p>
-        <br>
-        <h4>Funktionsweise eines MITM-Angriffs</h4>
-        <p>Ein MITM-Angreifer positioniert sich zwischen zwei Kommunikationspartnern. Es können zb. ein Benutzer und eine Webseite sein, könnte aber auch ein E-Mail-Server oder ein anderes System sein. Der Angreifer kann beispielsweise auch ein öffentliches WLAN-Netzwerk kontrollieren, sodass er den gesamten Netzwerkverkehr abhören kann. Ein MITM-Angriff kann auf verschiedene Arten durchgeführt werden, zum Beispiel durch Packet Sniffing, bei dem der Angreifer Datenpakete abfängt, oder durch DNS-Spoofing, um den Zielverkehr auf die falsche Seite umzuleiten.</p>
-        <br>
-        <h4>Manipulation von Daten</h4>
-        <p>Ein MITM-Angreifer kann nicht nur Daten abfangen, sondern auch verändern. Wenn zum Beispiel ein Benutzer eine Transaktion auf einer Website macht, könnte der Angreifer die Details ändern (zb. den Betrag einer Überweisung) oder den Inhalt von E-Mails umschreiben.</p>
-        <br>
-        <h4>Schutz vor MITM-Angriffen</h4>
-        <p>Um sich vor MITM-Angriffen zu schützen, sollte man immer auf die HTTPS-Verbindung achten, weil diese durch SSL/TLS-Verschlüsselung die Kommunikation zwischen Client und Server sichert. Zertifikate helfen dabei, die Identität des Servers zu überprüfen und sicherzustellen, dass man mit dem richtigen Server kommuniziert und nicht mit einem Angreifer.</p>
-        <br>
-        <p>Eine weitere Möglichkeit ist die Verwendung von VPNs. VPNs können den ganzen Internetverkehr verschlüsseln und so MITM-Angreifern den Zugriff auf sensible Daten erschweren.</p>
-        <br>
-        <h4>Fazit</h4>
-        <p>MITM-Angriffe sind eine gefährliche Bedrohung für die Privatsphäre und Sicherheit. Durch sichere Verbindungen, Verschlüsselung und wachsamem Verhalten können Nutzer jedoch effektiv verhindern, dass ihre Kommunikation abgefangen oder manipuliert wird.</p>
-        <p></p>
+        <h3>Firewalls</h3>
+
+<p>Eine Firewall ist eine wichtige Sicherheitskomponente in Netzwerken.Firewalls überwachen und filtern den Datenverkehr. Das Hauptziel der Firewalls ist es, gefährlichen Datenverkehr zu blockieren und erlaubte Verbindungen zuzulassen. Firewalls sind sowohl in Unternehmensnetzwerken als auch im privaten Bereich unverzichtbar.</p>
+
+<h4>Funktionsweise einer Firewall</h4>
+<p>Firewalls arbeiten nach festgelegten Regeln, die definieren, welche Datenpakete passieren dürfen und welche blockiert werden. Diese Regeln können auf Basis von IP-Adressen, Ports oder Protokollen erstellt werden. Moderne Firewalls bieten auch Deep Packet Inspection (DPI), um den Inhalt der Datenpakete zu analysieren.</p>
+
+<h4>Arten von Firewalls</h4>
+<ul>
+<li><strong>Paketfilter-Firewalls</strong>: Prüfen den Header von Datenpaketen und entscheiden anhand einfacher Regeln, ob diese weitergeleitet oder verworfen werden.</li>
+<li><strong>Stateful Inspection Firewalls</strong>: Analysieren nicht nur einzelne Pakete, sondern auch den Kontext der Verbindung.</li>
+<li><strong>Proxy-Firewalls</strong>: Arbeiten als Vermittler zwischen Client und Server und verbergen die eigentliche IP-Adresse.</li>
+<li><strong>Next-Generation Firewalls (NGFW)</strong>: Bieten erweiterte Funktionen wie Intrusion Prevention, Anwendungskontrolle und Deep Packet Inspection.</li>
+</ul>
+
+<h4>Einsatzgebiete</h4>
+<p>Firewalls sind in Unternehmen, Rechenzentren und privaten Netzwerken im Einsatz. Sie schützen Server, Endgeräte und kritische Infrastruktur vor Cyberangriffen. Besonders in Verbindung mit anderen Sicherheitsmassnahmen, wie VPNs und IDS/IPS-Systemen, bieten Firewalls effektiven Schutz.</p>
+
+<h4>Fazit</h4>
+<p>Firewalls sind ein zentrales Element der Netzwerksicherheit. Durch verschiedene Firewall-Typen lassen sich Netzwerke individuell absichern und Bedrohungen effektiv abwehren.</p>
+
 
 
 
@@ -118,20 +121,23 @@
       <i>Was ist mir gut gelungen? Wo hatte ich Probleme? Was habe ich heute gelernt? Was würde ich anders machen? Was
         würde ich wieder so machen? Wie habe ich mich gefühlt? Wie haben andere mich erlebt?</i><br><br>
       <hr>
-      <strong>ZLI, Montag, 27.Januar 2025</strong><br>
-      Am Morgen haben wir uns in Gruppen eingeteilt und haben ein Netzwerk aufgebaut mit 4 Rechnern und 2 Switches. Danach haben wir als erstes Mirroring (überwachung) eingerichtet. Danach haben wir noch VLans eingerichtet. Zum Schluss haben wir noch den Spamming Tree von der Switch aussgeschaltet und haben so einen Broadcast Storm ausgelöst. Das ganze haben wir in die Systemdokumentation dokumentiert.
+      <strong>ZLI, Montag, 05.Februar 2025</strong><br>
+      Am Morgen habe ich angefangen mit meiner Ideen Findung. Ich hatte schon eine Idee ein Man in the Middle Angriff zu machen. Ich habe ein neues Repository erstellt und habe noch ein neues Projekt erstellt. Ich habe in dieses Projekt einige Isues hinzugefügt. Am späten Nachmittag habe ich nochm die Dokumentation vorbereitet.
       
        <hr>
-      <strong>ZLI, Dienstag, 28.Januar 2025</strong><br>
-      Am Morgen sind wir in die Gruppen vom Montag gegangen und haben an den Aufträgen im Moodle weitergearbeitet. Wir haben an unserem Netzwerk noch ARP angeschaut und haben dann noch einen Abschluss gemacht.
+      <strong>ZLI, Dienstag, 05.Februar 2025</strong><br>
+      Am Morgen bin ich etwas später gekommen da ich noch beim Artzt war. Ich habe meine Hardware geholt und habe sie miteinander verbunden. Nach dem austauschen eines PCs habe ich bei einem PC Ubuntu installiert und auf dem anderen PC habe ich Windows Client installiert. Sonst habe ich mich nochmal in das ARP Spoofing Thema vertieft und habe meine Dokumentation mit einem Filius Bild und einem Text erweitert.
+
+
            <hr>
-      <strong>ZLI, Mittwoch, 29.Januar 2025</strong><br>
-     Am Morgen haben wir als erstes einen Input bekommen. Danach wurden wir mit anderen Informatikern in Gruppen aufgeteilt. In dieser Gruppe mussten wir zusammen eine Präsentation vorbereiten über das Thema Scrum (eine Arbeitsmethodik). Vor dem Mittag haben wir diese Präsentationen Präsentiert. Nach dem Mittag haben wir einen kurzen Input über GitHub erhalten. Danach mussten wir im Lime an den GitHub Aufträgen weiterarbeiten. <hr>
-      <strong>TBZ, Donnerstag, 30.Januar 2025</strong><br>
-      Ich habe am Morgen an meinen Aufträgen im Modul 231 weitergearbeitet. Wir haben noch das Modul besprochen und verbesserungsmöglichkeiten angeschaut. Am Nachmittag habe wir unsere letzten Abgaben zu Samba und Printing gemacht.
+      <strong>ZLI, Mittwoch, 06.Februar 2025</strong><br>
+      Am Morgen habe ich mit der Einrichtung von ARP Spoofing angefangen. Ich habe zuerst eingerichtet das der Windows Client auf den Ubuntu Client und der dann auf den Router zugreift. Danach habe ich den Datenstrom mit dem Ubuntu Client ausgelesen. Zum Schluss habe ich angefangen mit dem Webserver und SSL Manipulation.
        <hr>
-      <strong>BMZ, Freitag, 30.Januar 2025</strong><br>
-      Am Morgen haben wir in Französisch Relativpronomen angeschaut. In Chemie haben wir uns Störometrische Berechnung angeschaut. In Wirtschaft habe ich im Dossier weitergearbeitet. Am Nachmittag haben wir in Politik an unserem Geschichtsthema Revolutionen weitergearbeitet und in Mathe haben wir einen Test zu Planemetrie geschrieben.
+      <strong>TBZ, Donnerstag, 07.Februar 2025</strong><br>
+      Am Morgen habe ich weiter versucht die SSL Manipulation einzurichten. Allerdings ist mir dabei ein Fehler passiert das ich auf dem Windows Server keine Websiten mehr aufrufen konnte. Ich habe den Tag über probiert dieses Problem wieder rückgängig zu machen. Ich bin am Schluss noch unsicher gewesen ob es wieder funktioniert.
+       <hr>
+      <strong>ZLI, Freitag, 08.Februar 2025</strong><br>
+      Am Morgen habe ich mit der Windowskonfiguration angefangen. Ich habe Windows so konfiguriert das der ARP Spoofing Angriff vom Ubuntu Client nicht mehr funktioniert. Dazu habe ich die Router Mac Adresse statisch gesetzt sodass die ARP Nachrichten die Mac Adresse nicht mehr verändern können. Den restlichen Tag habe ich mir online Berichte über MitM angeschaut und habe meine Dokumentation weitergeführt.
        <hr>
       <!-- Tagesreflexionen Ende -->
 
@@ -150,7 +156,7 @@
       <h2>Ziele</h2>
       <i>Diese Ziele nehme ich mir für die kommende Woche vor!</i>
       <hr>
-      <strong>ZLI: </strong> Mein Projekt finden und es schnell verstehen <br>
+      <strong>ZLI: </strong> Mein Projekt beenden und gut Dokumentieren <br>
       <hr>
       <!-- Ziele Ende -->
 
@@ -183,7 +189,7 @@
 
   <!-- - - - - - - - - - - - Fusszeile Start - - - - - - - - - - - -->
   <footer class="fade-in-up">
-    <strong>Wochenbericht KW05 2025</strong><br>
+    <strong>Wochenbericht KW02 2025</strong><br>
     Giacomo Betsch<br>
    Informatiker Plattformentwicklung EFZ
   </footer>
